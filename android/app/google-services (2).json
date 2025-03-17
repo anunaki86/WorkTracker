@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "142263194436",
+    "project_id": "worktracker-ec8d6",
+    "storage_bucket": "worktracker-ec8d6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142263194436:android:2bbdda8f0f187695eabd11",
+        "android_client_info": {
+          "package_name": "com.example.nowa_aplikacja_pracy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxQF8iGokssRktJeGq-dkBd8eOyB5fT8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142263194436:android:1920b7abd2154658eabd11",
+        "android_client_info": {
+          "package_name": "com.twoja_firma.worktracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxQF8iGokssRktJeGq-dkBd8eOyB5fT8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

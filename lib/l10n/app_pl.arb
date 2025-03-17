@@ -1,0 +1,9 @@
+{
+  "@@locale": "pl",
+  "appTitle": "Śledzenie czasu pracy",
+  "login": "Zaloguj się",
+  "logout": "Wyloguj się",
+  "home": "Strona główna",
+  "settings": "Ustawienia",
+  "about": "O aplikacji"
+}
