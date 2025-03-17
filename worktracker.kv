@@ -1,0 +1,111 @@
+ScreenManager:
+    MainScreen:
+    SummaryScreen:
+    RoundScreen:
+
+<MainScreen>:
+    name: "main"
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        padding: "10dp"
+        
+        Label:
+            text: "Work Tracker"
+            font_size: "24sp"
+            size_hint_y: None
+            height: "40dp"
+
+        Button:
+            text: "Skanuj wyświetlacz"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.scan_display()
+        
+        Button:
+            text: "Przełącz tryb serwisowy"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.show_alert("Funkcja w budowie")
+        
+        Button:
+            text: "Podsumowanie"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.show_summary()
+        
+        Button:
+            text: "Rundy"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.root.current = "round"
+
+<SummaryScreen>:
+    name: "summary"
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        padding: "10dp"
+        
+        Label:
+            text: "Podsumowanie"
+            font_size: "24sp"
+            size_hint_y: None
+            height: "40dp"
+        
+        Button:
+            text: "Wróć"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.switch_to_main()
+
+<RoundScreen>:
+    name: "round"
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        padding: "10dp"
+        
+        Label:
+            text: "Rundy"
+            font_size: "24sp"
+            size_hint_y: None
+            height: "40dp"
+        
+        # Dodaj tutaj przyciski dla poszczególnych rund, np.:
+        Button:
+            text: "Runda 1"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.show_alert("Dane dla Rundy 1")
+        Button:
+            text: "Runda 2"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.show_alert("Dane dla Rundy 2")
+        Button:
+            text: "Runda 3"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.show_alert("Dane dla Rundy 3")
+        Button:
+            text: "Runda 4"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.show_alert("Dane dla Rundy 4")
+        Button:
+            text: "Runda 5"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.show_alert("Dane dla Rundy 5")
+        
+        Button:
+            text: "Wróć"
+            size_hint_y: None
+            height: "50dp"
+            on_release: app.switch_to_main()
+Button:
+    text: "Nowa funkcja"
+    size_hint_y: None
+    height: "50dp"
+    on_release: app.show_alert("Nowa funkcja działa!")
